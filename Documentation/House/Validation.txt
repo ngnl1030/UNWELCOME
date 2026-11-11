@@ -1,0 +1,23 @@
+PASS capsule route: Basement_B1/LargeStorage
+PASS capsule route: Basement_B1/MechanicalRoom
+PASS capsule route: Basement_B1/SecretTreasureRoom
+PASS capsule route: Basement_B1/ConnectingHall
+PASS capsule route: Basement_B1/RearLanding
+PASS capsule route: FirstFloor_1F/LivingRoom
+PASS capsule route: FirstFloor_1F/DiningRoom
+PASS capsule route: FirstFloor_1F/Study
+PASS capsule route: FirstFloor_1F/Kitchen
+PASS capsule route: FirstFloor_1F/EntranceHall
+PASS capsule route: FirstFloor_1F/RearLanding
+PASS capsule route: SecondFloor_2F/MasterBedroom
+PASS capsule route: SecondFloor_2F/KidsBedroom
+PASS capsule route: SecondFloor_2F/GuestBedroom
+PASS capsule route: SecondFloor_2F/Bathroom
+PASS capsule route: SecondFloor_2F/Playroom
+PASS capsule route: SecondFloor_2F/ConnectingHall
+PASS capsule route: SecondFloor_2F/RearLanding
+PASS CharacterController walk: NetworkKid to -3.2
+PASS CharacterController walk: NetworkKid to 3.2
+PASS CharacterController walk: NetworkThief to -3.2
+PASS CharacterController walk: NetworkThief to 3.2
+Reachable sampled positions: 30346 / 30347

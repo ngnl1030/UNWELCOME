@@ -1,0 +1,26 @@
+{
+  "checks": [
+    "Two processes booted",
+    "Host created",
+    "Host selected slot",
+    "Three bots added",
+    "Human replaces bot and lobby syncs",
+    "Nonhost bot changes rejected",
+    "Host removes bot",
+    "Host adds bot",
+    "Freed kid slot",
+    "Moved bot to thief slot",
+    "Human selects freed slot",
+    "All ready",
+    "Mixed match spawned",
+    "Local input and cameras isolated; bots simulated only on host",
+    "Bots move and replicate to remote client",
+    "Host animation spawns one shared trap",
+    "Client animation spawns one shared trap",
+    "Host and client see identical trap IDs and positions with no duplicates",
+    "Host exit cleans match",
+    "No runtime errors"
+  ],
+  "internet": true,
+  "result": "PASS"
+}

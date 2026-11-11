@@ -1,0 +1,27 @@
+{
+  "result": "PASS",
+  "checks": [
+    "Two processes booted",
+    "Host created",
+    "Host selected slot",
+    "Three bots added",
+    "Human replaces bot and lobby syncs",
+    "Nonhost bot changes rejected",
+    "Host removes bot",
+    "Host adds bot",
+    "Human selects freed slot",
+    "All ready",
+    "Mixed match spawned",
+    "Local input and cameras isolated; bots simulated only on host",
+    "Bots move and replicate to remote client",
+    "Host exit cleans match",
+    "Solo room created",
+    "Solo human selected slot",
+    "Solo room has three bots",
+    "Solo plus three bots ready",
+    "Solo plus three bots spawned",
+    "Solo match exits cleanly",
+    "No runtime errors"
+  ],
+  "internet": true
+}
