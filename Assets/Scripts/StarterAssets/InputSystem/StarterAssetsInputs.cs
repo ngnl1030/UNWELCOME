@@ -10,6 +10,8 @@ namespace StarterAssets
 		[Header("Character Input Values")]
 		public Vector2 move;
 		public Vector2 look;
+		public const string SensitivityPreference = "CameraSensitivity";
+		[System.NonSerialized] public float cameraSensitivity = 1f;
 		public bool jump;
 		public bool sprint;
 
@@ -53,7 +55,7 @@ namespace StarterAssets
 
 		public void LookInput(Vector2 newLookDirection)
 		{
-			look = newLookDirection;
+			look = newLookDirection * cameraSensitivity;
 		}
 
 		public void JumpInput(bool newJumpState)
@@ -68,6 +70,7 @@ namespace StarterAssets
 		
 		private void OnEnable()
 		{
+			cameraSensitivity = Mathf.Clamp(PlayerPrefs.GetFloat(SensitivityPreference, 1f), .2f, 3f);
 			SetCursorState(cursorLocked && Application.isFocused);
 		}
 
