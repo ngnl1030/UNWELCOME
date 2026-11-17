@@ -100,6 +100,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7497807096132789062}
   - component: {fileID: 3278789006032052255}
+  - component: {fileID: 294441382646406150}
   m_Layer: 0
   m_Name: BananaTrap
   m_TagString: Untagged
@@ -144,3 +145,15 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.97362, y: 0.5437225, z: 1}
   m_Center: {x: 0, y: -0.22813873, z: 0}
+--- !u!114 &294441382646406150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8267024084478645517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b264b0c918485304fa6658aa517299a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MakeTrap.Multiplayer.TripTrap

@@ -68,7 +68,7 @@ public static class MultiplayerFrameworkBuilder
         Menu(sessionPrefab);
         Lobby(kidPreview, thiefPreview);
         Game();
-        var scenePaths = new[] { "Assets/Scenes/MainMenu.unity", "Assets/Scenes/CharacterSelectLobby.unity", "Assets/Scenes/GameScene.unity", "Assets/Scenes/1stPerson.unity", "Assets/Scenes/3rdPerson.unity" };
+        var scenePaths = new[] { "Assets/Scenes/MainMenu.unity", "Assets/Scenes/CharacterSelectLobby.unity", "Assets/Scenes/GameScene.unity" };
         EditorBuildSettings.scenes = scenePaths.Select(path => new EditorBuildSettingsScene(path, true)).ToArray();
         AssetDatabase.SaveAssets();
         EditorSceneManager.OpenScene(scenePaths[0]);
@@ -124,10 +124,6 @@ public static class MultiplayerFrameworkBuilder
         ui.quitButton = Button(menu.transform,"종료",Vector2.zero,Vector2.one);
         ui.lanToggle = Toggle(canvasRoot.transform,"LAN 직접 연결 (기본: 인터넷 방 코드)",new Vector2(.06f,.12f),new Vector2(.57f,.18f));
         ui.statusText = Text(canvasRoot.transform,"",new Vector2(.06f,.025f),new Vector2(.94f,.10f),20);
-        var practice1=Button(canvasRoot.transform,"1인칭 연습",new Vector2(.70f,.13f),new Vector2(.82f,.19f));
-        var practice3=Button(canvasRoot.transform,"3인칭 연습",new Vector2(.84f,.13f),new Vector2(.96f,.19f));
-        UnityEventTools.AddStringPersistentListener(practice1.onClick, ui.OpenPractice,"1stPerson");
-        UnityEventTools.AddStringPersistentListener(practice3.onClick, ui.OpenPractice,"3rdPerson");
         ui.joinPanel = Modal(canvasRoot.transform,"JoinRoom", "게임 참가");
         Text(ui.joinPanel.transform,"인터넷: 방 코드 / LAN: 호스트 IP",new Vector2(.08f,.62f),new Vector2(.92f,.74f),21);
         ui.connectionInput = Input(ui.joinPanel.transform,new Vector2(.08f,.42f),new Vector2(.92f,.6f));

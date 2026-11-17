@@ -101,6 +101,7 @@ GameObject:
   - component: {fileID: 6107550081039278074}
   - component: {fileID: 4865643186106942967}
   - component: {fileID: 8535970220320465780}
+  - component: {fileID: 689999525065315580}
   m_Layer: 0
   m_Name: NetworkTrapBox
   m_TagString: Untagged
@@ -172,3 +173,15 @@ MonoBehaviour:
   AutoObjectParentSync: 1
   SyncOwnerTransformWhenParented: 1
   AllowOwnerToParent: 0
+--- !u!114 &689999525065315580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7557217268834258742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b264b0c918485304fa6658aa517299a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MakeTrap.Multiplayer.TripTrap

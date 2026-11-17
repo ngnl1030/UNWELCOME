@@ -959,6 +959,7 @@ GameObject:
   - component: {fileID: 935965063256890089}
   - component: {fileID: 3948882698339818094}
   - component: {fileID: 4294536263620036978}
+  - component: {fileID: 6442421502001616723}
   m_Layer: 8
   m_Name: NetworkThiefThin
   m_TagString: Player
@@ -1269,6 +1270,7 @@ MonoBehaviour:
   hideForFirstPersonOwner:
   - {fileID: 5215180414798785870}
   trapPrefab: {fileID: 0}
+  bananaTrapPrefab: {fileID: 0}
 --- !u!114 &7109277966704692718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1350,6 +1352,10 @@ MonoBehaviour:
       NameHash: -560648795
       Synchronize: 1
       ParameterType: 9
+    - name: FallFlat
+      NameHash: 1356455001
+      Synchronize: 1
+      ParameterType: 9
   AnimatorParametersExpanded: 0
 --- !u!114 &4294536263620036978
 MonoBehaviour:
@@ -1363,6 +1369,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46ecb0b19a3e228448323da334d31780, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MakeTrap.Multiplayer.FirstPersonAnimation
+--- !u!114 &6442421502001616723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3856006576811867195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19d706af37d83a24a872ef20a2973d62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MakeTrap.Multiplayer.ThiefTrapFall
+  fallDuration: 1.9633335
 --- !u!1 &3895539233659151123
 GameObject:
   m_ObjectHideFlags: 0
